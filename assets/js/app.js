@@ -35,7 +35,7 @@ var form = $("<form>"); // creating a form element
 
 
 var firstname = $("<input>");  // creating an input element
-	
+
 	// Adding only one attribute
 		// firstname.attr('type', 'text');
 
@@ -51,7 +51,7 @@ var firstname = $("<input>");  // creating an input element
 
 
 var lastname = $("<input>"); // creating an input element
-	
+
 	// Adding more attributes
 	lastname.attr({
 		"type":'text',
@@ -68,16 +68,29 @@ var send = $("<button>");
 // Creating elements, break line
 var break1 = $("<br>");
 
-var break2 = $("<br>");	
-	
+var break2 = $("<br>");
+
 
 // Adding elements into form element
 form.append(firstname, break1, lastname, break2, send);
 
+// creating div
+var div1 = $("<div>");
+div1.html("Hello World!!");
 
+var greeting = $("<h2>");
+greeting.html("Welcome to London");
 
+var para1 = $("<p>");
+para1.html("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in eprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 
-$("body").append(title); // adding title in the DOM
+var farewell = $("<h3>");
+farewell.html("Goodbye");
+
+var para2 = $("<p>");
+para2.html("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in eprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+
+$("body").append(title, div1, greeting, para1, farewell, para2); // adding title in the DOM
 
 
 // A for loop for 25
@@ -92,7 +105,7 @@ for(var i = 0; i < 25; i++){
 		});
 
 	$("body").append(img); // appending the attributes into the DOM
-	
+
 }
 
 
